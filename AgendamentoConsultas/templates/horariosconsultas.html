@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horários Disponíveis</title>
+    <script src="../javaScript/cadastroconsulta.js"></script>
+    <script src="../javaScript/consultasagendadas.js"></script>
+    <script src="../javaScript/horariosconsultas.js"></script>
+    <script src="../javaScript/server.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Horários Disponíveis</h1>
+    <form id="horariosForm">
+        <label for="medico">Médico:</label>
+        <select id="medicoHorarios" required>
+            <option value="Dr. Wanderson">Dr. Wanderson</option>
+            <option value="Dr. Humberto">Dr. Humberto</option>
+        </select>
+
+        <label for="dataHorarios">Data:</label>
+        <input type="date" id="dataHorarios" required>
+
+        <button type="button" onclick="verificarHorarios()">Verificar Horários</button>
+
+        <ul id="horariosList">
+            <!-- Os horários disponíveis serão preenchidos dinamicamente com JavaScript -->
+        </ul>
+    </form>
+</body>
+</html>

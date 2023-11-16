@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Consulta</title>
+    <script src="../javaScript/cadastroconsulta.js"></script>
+    <script src="../javaScript/consultasagendadas.js"></script>
+    <script src="../javaScript/horariosconsultas.js"></script>
+    <script src="../javaScript/server.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+    <div class="container"></div>
+    <h1>Agendar Nova Consulta</h1>
+    <form id="consultaForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" required>
+
+        <label for="medico">Médico:</label>
+        <select id="medico" required>
+            <option value="Dr. Wanderson">Dr. Wanderson</option>
+            <option value="Dr. Humberto">Dr. Humberto</option>
+        </select>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+
+        <label for="hora">Hora:</label>
+        <select id="hora" required>
+            <!-- As opções de hora serão preenchidas dinamicamente com JavaScript -->
+        </select>
+
+        <button type="button" onclick="agendarConsulta()">Agendar Consulta</button>
+    </form>
+    </div>
+</body>
+
+</html>
